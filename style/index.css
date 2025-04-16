@@ -1,0 +1,85 @@
+@import "./variables.css";
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local('Roboto-Regular'),
+    url('../fonts/roboto/static/Roboto-Regular.ttf') format('ttf'),
+    url('../fonts/roboto/roboto-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "Inter-Italic";
+  src: local('Inter-Italic'),
+    url('../fonts/inter/static/Inter_24pt-Italic.ttf') format('ttf'),
+    url('../fonts/inter/Inter-italic-var.woff2') format('woff2');
+}
+
+*,
+*::after,
+*::before {  
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  color: var(--main);
+}
+
+.container {
+ margin: 0 auto;
+ max-width: 1024px;
+ padding: 20px 20px 0;
+ background-color: var(--bg-main);
+ border: 1px solid var(--border-grey);
+}
+
+.title {
+  padding-top: 12px;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.top-text {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.title-level-2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.box {
+  margin-bottom: 20px;
+  padding-top: 4px;
+}
+
+.box-text-roboto {
+  margin-bottom: 20px;
+  border: 5px solid var(--border-red);
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--secondary);
+}
+
+.box-text-inter {
+  margin-bottom: 20px;
+  border: 5px solid var(--border-blue);
+  font-family: 'Inter-Italic', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--purple);
+}
+
+.bottom-text {
+  margin-bottom: 20px;
+  padding: 0 51px 12px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--red);
+}
